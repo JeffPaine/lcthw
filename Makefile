@@ -1,7 +1,7 @@
 CFLAGS=-Wall -g
 BIN=bin
 
-$(BIN)/ex%: ex%.c
+$(BIN)/%: %.c
 	cc $(CFLAGS) $< -o $@
 
 clean:
